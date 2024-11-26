@@ -61,6 +61,9 @@ services:
       - ./jars/hive-jdbc-2.3.2-standalone.jar:/opt/zeppelin/interpreter/jdbc/hive-jdbc-2.3.2-standalone.jar
       - ./jars/hadoop-common-2.6.0.jar:/opt/zeppelin/interpreter/jdbc/hadoop-common-2.6.0.jar
       - ./co2.csv:/data
+      - ./notebook:/notebook
+      - ./logs:/logs
+
     restart: always
 
 volumes:
